@@ -1,0 +1,17 @@
+[package]
+name = "egui-event-macros"
+version = "0.1.0"
+edition = "2024"
+description = "Procedural macros for egui-event"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Keivry/egui-event-macros"
+homepage = "https://github.com/Keivry/egui-event-macros"
+keywords = ["egui", "event", "macros"]
+categories = ["development-tools::procedural-macro-helpers"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = { version = "2", features = ["derive"] }
